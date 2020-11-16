@@ -1,0 +1,65 @@
+
+Compiled from "Homework1.java"
+public class Homework1 {
+  public Homework1();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_1
+       1: istore_1                          // 赋值 varInt
+       2: iconst_3
+       3: istore_2                          // 赋值 varInt2
+       4: iconst_1
+       5: istore_3                          // 赋值 varBoolean
+       6: iconst_0
+       7: istore        4                   // 赋值 varBoolean2
+       9: iconst_2
+      10: istore        5                   // 赋值 varShort
+      12: iconst_4
+      13: istore        6                   // 赋值 varBye
+      15: bipush        97
+      17: istore        7                   // 赋值 varChar
+      19: ldc2_w        #2                  // long 10l
+      22: lstore        8                   // 赋值 varLong
+      24: ldc2_w        #4                  // double 10.9d
+      27: dstore        10                  // 赋值 varDouble
+      29: ldc           #6                  // float 9.01f
+      31: fstore        12                  // 赋值 varFloat
+      33: iload_1
+      34: iload_2
+      35: if_icmpge     45                  // 加载两个整数，比较两个整数大于等于，满足则跳转到45行
+      38: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      41: iload_1
+      42: invokevirtual #8                  // Method java/io/PrintStream.println:(I)V 打印前一步加载到的数据
+      45: iload_2
+      46: iload_1
+      47: idiv                              // 加载两个整数并且相除
+      48: istore        13                  // 存储除得的结果
+      50: iload_1                           // 加载整数
+      51: i2d                               // 整数转为double
+      52: dload         10                  // 加载double
+      54: dadd                              // 两个double相加
+      55: dstore        14                  // 存储加法计算结果
+      57: lload         8
+      59: iload         5
+      61: i2l
+      62: lsub                              // 加载整数，整数转为long，两个long相加
+      63: lstore        16                  // 存储加法结果
+      65: fload         12
+      67: iload         6
+      69: i2f
+      70: fmul
+      71: fstore        18                  // 整数转为float再进行两个float相加，并存储
+      73: iload         13                  // 加载一个整数
+      75: ifle          92                  如果小于某值，跳转到92
+      78: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      81: iload         13
+      83: invokevirtual #8                  // Method java/io/PrintStream.println:(I)V 打印结果
+      86: iinc          13, -1              // 执行整数的增长操作，步长为-1
+      89: goto          73                  跳转到 73
+      92: return
+}

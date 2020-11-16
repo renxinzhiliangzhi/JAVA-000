@@ -1,0 +1,147 @@
+Classfile /Users/renxin/github/JAVA-000/Week_01/homework/src/Homework1.class
+  Last modified 2020年11月15日; size 662 bytes
+  MD5 checksum 15ac120942cab6df95f1caf4d4c53a54
+  Compiled from "Homework1.java"
+public class Homework1
+  minor version: 0
+  major version: 55                                                                           // 编译版本信息
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER                                                       // 限定信息 public 继承自父类
+  this_class: #9                          // Homework1
+  super_class: #10                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1                                         // 类定义信息
+Constant pool:                                                                                // 常量池，常量、静态方法及静态方法类
+   #1 = Methodref          #10.#21        // java/lang/Object."<init>":()V
+   #2 = Long               10l
+   #4 = Double             10.9d
+   #6 = Float              9.01f
+   #7 = Fieldref           #22.#23        // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Methodref          #24.#25        // java/io/PrintStream.println:(I)V
+   #9 = Class              #26            // Homework1                                        // 自己类引用
+  #10 = Class              #27            // java/lang/Object
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               main
+  #16 = Utf8               ([Ljava/lang/String;)V
+  #17 = Utf8               StackMapTable
+  #18 = Class              #28            // "[Ljava/lang/String;"
+  #19 = Utf8               SourceFile
+  #20 = Utf8               Homework1.java
+  #21 = NameAndType        #11:#12        // "<init>":()V
+  #22 = Class              #29            // java/lang/System
+  #23 = NameAndType        #30:#31        // out:Ljava/io/PrintStream;
+  #24 = Class              #32            // java/io/PrintStream
+  #25 = NameAndType        #33:#34        // println:(I)V
+  #26 = Utf8               Homework1
+  #27 = Utf8               java/lang/Object
+  #28 = Utf8               [Ljava/lang/String;
+  #29 = Utf8               java/lang/System
+  #30 = Utf8               out
+  #31 = Utf8               Ljava/io/PrintStream;
+  #32 = Utf8               java/io/PrintStream
+  #33 = Utf8               println
+  #34 = Utf8               (I)V
+{
+  public Homework1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 11: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=19, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iconst_3
+         3: istore_2
+         4: iconst_1
+         5: istore_3
+         6: iconst_0
+         7: istore        4
+         9: iconst_2
+        10: istore        5
+        12: iconst_4
+        13: istore        6
+        15: bipush        97
+        17: istore        7
+        19: ldc2_w        #2                  // long 10l
+        22: lstore        8
+        24: ldc2_w        #4                  // double 10.9d
+        27: dstore        10
+        29: ldc           #6                  // float 9.01f
+        31: fstore        12
+        33: iload_1
+        34: iload_2
+        35: if_icmpge     45
+        38: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        41: iload_1
+        42: invokevirtual #8                  // Method java/io/PrintStream.println:(I)V
+        45: iload_2
+        46: iload_1
+        47: idiv
+        48: istore        13
+        50: iload_1
+        51: i2d
+        52: dload         10
+        54: dadd
+        55: dstore        14
+        57: lload         8
+        59: iload         5
+        61: i2l
+        62: lsub
+        63: lstore        16
+        65: fload         12
+        67: iload         6
+        69: i2f
+        70: fmul
+        71: fstore        18
+        73: iload         13
+        75: ifle          92
+        78: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        81: iload         13
+        83: invokevirtual #8                  // Method java/io/PrintStream.println:(I)V
+        86: iinc          13, -1
+        89: goto          73
+        92: return
+      LineNumberTable:
+        line 16: 0
+        line 17: 2
+        line 18: 4
+        line 19: 6
+        line 20: 9
+        line 21: 12
+        line 22: 15
+        line 23: 19
+        line 24: 24
+        line 25: 29
+        line 27: 33
+        line 28: 38
+        line 31: 45
+        line 32: 50
+        line 33: 57
+        line 34: 65
+        line 36: 73
+        line 37: 78
+        line 36: 86
+        line 40: 92
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 45                 // // 栈信息，可以看到只有四种类型，int、boolean、byte、short、char 都归属于int类型
+          locals = [ class "[Ljava/lang/String;", int, int, int, int, int, int, int, long, double, float ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 27
+          locals = [ class "[Ljava/lang/String;", int, int, int, int, int, int, int, long, double, float, int, double, long, float ]
+          stack = []
+        frame_type = 18 /* same */
+}
+SourceFile: "Homework1.java"
